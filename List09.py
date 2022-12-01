@@ -6,10 +6,20 @@ def main(list1):
     Returns:
         bool: return answer
     """
-    b=list1
-    i=0
-    while i<len(b):
-        return True
-    else:
-        return False
+    i = 0
+    k = 0
+
+    while i < len(list1) - 1:
+
+        if list1[i] == list1[i+1]:
+            k = True
+
+            return True
+        else:
+            k = False    
+
+            return False    
+
+    return k 
+    
 print(main([0,0,0,0,0]))
